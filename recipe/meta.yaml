@@ -23,7 +23,7 @@ requirements:
     - eigen
 
 build:
-  number: 0
+  number: 1
 
 about:
   home: https://github.com/Jmeyer1292/opw_kinematics.git
