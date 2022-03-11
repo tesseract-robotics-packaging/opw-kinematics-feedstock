@@ -3,7 +3,7 @@ About opw-kinematics
 
 Home: https://github.com/Jmeyer1292/opw_kinematics.git
 
-Package license: 
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/opw-kinematics-feedstock/blob/master/LICENSE.txt)
 
@@ -73,4 +73,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@johnwason](https://github.com/johnwason/)
 
