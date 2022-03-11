@@ -25,6 +25,13 @@ requirements:
   run:
     - eigen
 
+test:
+  commands:
+    - test -f ${PREFIX}/include/opw_kinematics/opw_kinematics.h  # [unix]
+    - test -f ${PREFIX}/lib/cmake/opw_kinematics/opw_kinematics-config.cmake # [unix]
+    - if not exist %LIBRARY_PREFIX%\include\opw_kinematics\opw_kinematics.h (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\opw_kinematics\opw_kinematics-config.cmake (exit 1)  # [win]
+
 build:
   number: 1
 
