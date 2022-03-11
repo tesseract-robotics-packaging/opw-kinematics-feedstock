@@ -34,8 +34,14 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\opw_kinematics\opw_kinematics-config.cmake (exit 1)  # [win]
 
 build:
-  number: 3
+  number: 4
 
 about:
   home: https://github.com/Jmeyer1292/opw_kinematics.git
   summary: Closed form IK for parallel base, spherical wrist industrial manipulators
+  license: Apache-2.0
+  license_file: src/LICENSE
+
+extra:
+  recipe-maintainers:
+    - johnwason
