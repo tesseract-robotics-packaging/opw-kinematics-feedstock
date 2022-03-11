@@ -21,6 +21,7 @@ requirements:
     - ninja # [win]
     - make # [linux]
     - ros-industrial-cmake-boilerplate
+  host:
     - eigen
   run:
     - eigen
