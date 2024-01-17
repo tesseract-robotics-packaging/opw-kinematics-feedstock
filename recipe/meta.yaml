@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://github.com/Jmeyer1292/opw_kinematics/archive/refs/tags/{{ opw_kinematics_version }}.tar.gz
+  - url: https://github.com/Jmeyer1292/opw_kinematics/archive/refs/tags/{{ version }}.tar.gz
     sha256: 7d8512b6b9a794a888645d0371b18f4dc1ce3e4c034f2c413d3c8c7eeed7b28f
     folder: src
 
