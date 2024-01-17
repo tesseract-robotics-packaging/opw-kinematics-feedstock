@@ -1,11 +1,11 @@
-About opw-kinematics
-====================
+About opw-kinematics-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/opw-kinematics-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Jmeyer1292/opw_kinematics.git
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/opw-kinematics-feedstock/blob/master/LICENSE.txt)
 
 Summary: Closed form IK for parallel base, spherical wrist industrial manipulators
 
@@ -33,16 +33,41 @@ conda config --add channels tesseract-robotics
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics` channel has been enabled, `opw-kinematics` can be installed with:
+Once the `tesseract-robotics` channel has been enabled, `opw-kinematics` can be installed with `conda`:
 
 ```
 conda install opw-kinematics
 ```
 
-It is possible to list all of the versions of `opw-kinematics` available on your platform with:
+or with `mamba`:
+
+```
+mamba install opw-kinematics
+```
+
+It is possible to list all of the versions of `opw-kinematics` available on your platform with `conda`:
 
 ```
 conda search opw-kinematics --channel tesseract-robotics
+```
+
+or with `mamba`:
+
+```
+mamba search opw-kinematics --channel tesseract-robotics
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search opw-kinematics --channel tesseract-robotics
+
+# List packages depending on `opw-kinematics`:
+mamba repoquery whoneeds opw-kinematics --channel tesseract-robotics
+
+# List dependencies of `opw-kinematics`:
+mamba repoquery depends opw-kinematics --channel tesseract-robotics
 ```
 
 
