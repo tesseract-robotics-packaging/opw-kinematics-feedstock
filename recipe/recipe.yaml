@@ -36,15 +36,9 @@ requirements:
     - ${{ pin_subpackage('opw-kinematics', upper_bound='x.x') }}
 
 tests:
-  - script:
-      - if: unix
-        then: test -f ${PREFIX}/include/opw_kinematics/opw_kinematics.h
-      - if: unix
-        then: test -f ${PREFIX}/lib/cmake/opw_kinematics/opw_kinematics-config.cmake
-      - if: win
-        then: if not exist %LIBRARY_PREFIX%\include\opw_kinematics\opw_kinematics.h (exit 1)
-      - if: win
-        then: if not exist %LIBRARY_PREFIX%\lib\cmake\opw_kinematics\opw_kinematics-config.cmake (exit 1)
+  - package_contents:
+      include:
+      - opw_kinematics/opw_kinematics.h
 
 about:
   summary: Closed form IK for parallel base, spherical wrist industrial manipulators
