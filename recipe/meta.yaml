@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.3" %}
 
 package:
   name: opw-kinematics
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/Jmeyer1292/opw_kinematics/archive/refs/tags/{{ version }}.tar.gz
-    sha256: 7d8512b6b9a794a888645d0371b18f4dc1ce3e4c034f2c413d3c8c7eeed7b28f
+    sha256: 9d96b780e690dafee9b5978102a1b3007afa5cd838a2c47ce220ceb679fcee15
     folder: src
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
     - make # [linux]
     - ros-industrial-cmake-boilerplate
   host:
+    - eigen-abi-devel
     - eigen
   run:
     - eigen
@@ -33,6 +34,8 @@ test:
 
 build:
   number: 0
+  run_exports:
+    - {{ pin_subpackage('opw-kinematics', max_pin='x.x') }}
 
 about:
   home: https://github.com/Jmeyer1292/opw_kinematics.git
