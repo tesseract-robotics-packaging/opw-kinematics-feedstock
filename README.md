@@ -13,7 +13,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/tesseract-robotics/opw-kinematics-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/tesseract-robotics/opw-kinematics-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -26,14 +33,14 @@ Current release info
 Installing opw-kinematics
 =========================
 
-Installing `opw-kinematics` from the `tesseract-robotics/label/dev_indv` channel can be achieved by adding `tesseract-robotics/label/dev_indv` to your channels with:
+Installing `opw-kinematics` from the `tesseract-robotics/label/` channel can be achieved by adding `tesseract-robotics/label/` to your channels with:
 
 ```
-conda config --add channels tesseract-robotics/label/dev_indv
+conda config --add channels tesseract-robotics/label/
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics/label/dev_indv` channel has been enabled, `opw-kinematics` can be installed with `conda`:
+Once the `tesseract-robotics/label/` channel has been enabled, `opw-kinematics` can be installed with `conda`:
 
 ```
 conda install opw-kinematics
@@ -48,26 +55,26 @@ mamba install opw-kinematics
 It is possible to list all of the versions of `opw-kinematics` available on your platform with `conda`:
 
 ```
-conda search opw-kinematics --channel tesseract-robotics/label/dev_indv
+conda search opw-kinematics --channel tesseract-robotics/label/
 ```
 
 or with `mamba`:
 
 ```
-mamba search opw-kinematics --channel tesseract-robotics/label/dev_indv
+mamba search opw-kinematics --channel tesseract-robotics/label/
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search opw-kinematics --channel tesseract-robotics/label/dev_indv
+mamba repoquery search opw-kinematics --channel tesseract-robotics/label/
 
 # List packages depending on `opw-kinematics`:
-mamba repoquery whoneeds opw-kinematics --channel tesseract-robotics/label/dev_indv
+mamba repoquery whoneeds opw-kinematics --channel tesseract-robotics/label/
 
 # List dependencies of `opw-kinematics`:
-mamba repoquery depends opw-kinematics --channel tesseract-robotics/label/dev_indv
+mamba repoquery depends opw-kinematics --channel tesseract-robotics/label/
 ```
 
 
@@ -85,7 +92,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `tesseract-robotics` channel.
 Note that all branches in the tesseract-robotics/opw-kinematics-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
