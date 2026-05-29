@@ -1,5 +1,9 @@
 @echo off
 
+rmdir /s /q src
+mkdir src
+tar xf source.tar.gz --strip-components=1 -C src
+
 cmake -GNinja ^
   -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
   -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^

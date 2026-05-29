@@ -14,3 +14,7 @@ build_platform:
 
 github_actions:
   store_build_artifacts: True
+
+conda_build:
+  pkg_format: '2'
+conda_build_tool: rattler-build
